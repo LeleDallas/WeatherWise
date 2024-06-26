@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-
-function App() {
-  return (
-    <>Test</>
-=======
 import { ProConfigProvider, StatisticCard } from '@ant-design/pro-components';
 import { AutoComplete, ConfigProvider, Flex, Typography } from 'antd';
 import { useState } from 'react';
@@ -122,7 +116,6 @@ function App() {
       </ConfigProvider >
     </ProConfigProvider>
 
->>>>>>> Stashed changes
 
   )
 }
