@@ -1,5 +1,4 @@
 export const enumToIconName = (value: number) => {
-    console.log(value)
     switch (value) {
         case 0:
             return 'icon-Sun';

@@ -24,7 +24,8 @@ export default {
                     precipitation_probability_max: {
                         value: forecasting.daily.precipitation_probability_max[index],
                         unit: forecasting.daily_units.precipitation_probability_max,
-                        title: t('precipitation_probability_max')
+                        title: t('precipitation_probability_max'),
+                        icon: "icon-Rain3"
                     },
                     wind_speed_10m_max: {
                         value: forecasting.daily.wind_speed_10m_max[index],
@@ -63,25 +64,34 @@ export default {
                         value: forecasting.daily.apparent_temperature_max[index],
                         unit: forecasting.daily_units.apparent_temperature_max,
                         title: t('apparent_temperature_max'),
+                        icon: "icon-Cloudy"
                     },
                     apparent_temperature_min: {
                         value: forecasting.daily.apparent_temperature_min[index],
                         unit: forecasting.daily_units.apparent_temperature_min,
-                        title: t('apparent_temperature_min')
+                        title: t('apparent_temperature_min'),
+                        icon: "icon-Cloudy"
                     },
 
                     temperature_2m_max: {
                         value: forecasting.daily.temperature_2m_max[index],
                         unit: forecasting.daily_units.temperature_2m_max,
-                        title: t('temperature_2m_max')
+                        title: t('temperature_2m_max'),
+                        icon: "icon-Temperatureup"
                     },
                     temperature_2m_min: {
                         value: forecasting.daily.temperature_2m_min[index],
                         unit: forecasting.daily_units.temperature_2m_min,
-                        title: t('temperature_2m_min')
+                        title: t('temperature_2m_min'),
+                        icon: "icon-Temperaturedown"
                     },
                     time: date,
-
+                    humidity: {
+                        value: forecasting.current.relative_humidity_2m,
+                        unit: forecasting.current_units.relative_humidity_2m,
+                        title: t("humidity"),
+                        icon: "icon-Humidity"
+                    },
                     weather_code: WeatherCode[forecasting.daily.weather_code[index]],
                     wind_gusts_10m_max: {
                         value: forecasting.daily.wind_gusts_10m_max[index],

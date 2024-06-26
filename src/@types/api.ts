@@ -20,6 +20,7 @@ export type Forecasting = {
     }
     current_units: {
         surface_pressure: string
+        relative_humidity_2m: string;
     },
     daily: {
         apparent_temperature_max: number[];
@@ -56,6 +57,7 @@ export type Forecasting = {
         weather_code: string;
         wind_gusts_10m_max: string;
         wind_speed_10m_max: string;
+       
     };
     elevation: number;
     generationtime_ms: number;
@@ -69,8 +71,8 @@ export type Forecasting = {
 type UnitsData = {
     value: number | string;
     unit: string;
-    title?: string;
-    icon?: string;
+    title: string;
+    icon: string;
 }
 
 export type ForecastingUnits = {
@@ -89,6 +91,7 @@ export type ForecastingUnits = {
     sunrise: UnitsData;
     sunset: UnitsData;
     pressure: UnitsData
+    humidity: UnitsData
 };
 
 
