@@ -7,6 +7,7 @@ import WeatherCard from './components/Card/WheatherCard';
 import { IconFont } from './components/IconFont';
 import MainLayout from './layout/MainLayout';
 import './i18n/config';
+import WeekWeatherCard from './components/Card/WeekWeatherCard';
 
 const { Text } = Typography
 
@@ -115,6 +116,7 @@ function App() {
                 </Flex>
               </Flex>
               <WeatherCard data={data} />
+              <WeekWeatherCard data={data} />
             </>
           }
         </MainLayout>
