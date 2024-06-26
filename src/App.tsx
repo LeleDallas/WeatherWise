@@ -6,6 +6,7 @@ import api from './api';
 import WeatherCard from './components/Card/WheatherCard';
 import { IconFont } from './components/IconFont';
 import MainLayout from './layout/MainLayout';
+import './i18n/config';
 
 const { Text } = Typography
 
@@ -70,48 +71,52 @@ function App() {
               }
             />
           </Flex>
-          {data && <>
-            <Flex wrap align='center' justify='space-between' style={{ paddingInline: 42 }}>
-              <Flex wrap align='center' gap={24}>
-                <IconFont type={data[Object.keys(data)[0]].icon} style={{ fontSize: 280 }} />
-                <Flex vertical align='start'>
-                  <StatisticCard
-                    style={{ background: 'transparent', }}
-                    statistic={{
-                      style: { fontSize: 26, color: '#C5C5C8', },
-                      valueStyle: { fontSize: 80 },
-                      description: data[Object.keys(data)[0]].weather_code,
-                      suffix: data[Object.keys(data)[0]].temperature_2m_max.unit,
-                      valueRender: () => <Text style={{ fontSize: 100 }}>{data[Object.keys(data)[0]].current}</Text>
-                    }}
-                  />
+          {data &&
+            <>
+              <Flex wrap align='center' justify='space-between' style={{ paddingInline: 42 }}>
+                <Flex wrap align='center' gap={24}>
+                  <IconFont type={data[Object.keys(data)[0]].icon} style={{ fontSize: 280, filter: "drop-shadow(3px 5px 2px rgb(0 0 0 / 0.8))" }} />
+                  <Flex vertical align='start'>
+                    <StatisticCard
+                      style={{ background: 'transparent', }}
+                      statistic={{
+                        style: { fontSize: 26, color: '#C5C5C8', },
+                        valueStyle: { fontSize: 80 },
+                        description: data[Object.keys(data)[0]].weather_code,
+                        suffix: data[Object.keys(data)[0]].temperature_2m_max.unit,
+                        valueRender: () => <Text style={{ fontSize: 100 }}>{data[Object.keys(data)[0]].current}</Text>
+                      }}
+                    />
+                  </Flex>
+                </Flex>
+                <Flex>
+                  <StatisticCard.Group style={{ background: "transparent" }}>
+                    <StatisticCard
+                      colStyle={{ width: "unset" }}
+                      style={{ background: "transparent", filter: "drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))" }}
+                      statistic={{
+                        title: 'Min',
+                        value: data[Object.keys(data)[0]].temperature_2m_min.value,
+                        suffix: data[Object.keys(data)[0]].temperature_2m_min.unit,
+                        icon: <IconFont type='icon-Temperaturedown' style={{ fontSize: 60 }} />
+                      }}
+                    />
+                    <StatisticCard
+                      colStyle={{ width: "unset" }}
+                      style={{ background: "transparent", filter: "drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))" }}
+                      statistic={{
+                        title: 'Max',
+                        value: data[Object.keys(data)[0]].temperature_2m_max.value,
+                        suffix: data[Object.keys(data)[0]].temperature_2m_max.unit,
+                        icon: <IconFont type='icon-Temperatureup' style={{ fontSize: 60 }} />
+                      }}
+                    />
+                  </StatisticCard.Group>
                 </Flex>
               </Flex>
-              <Flex>
-                <StatisticCard.Group style={{ background: "transparent" }}>
-                  <StatisticCard
-                    style={{ background: "transparent" }}
-                    statistic={{
-                      title: 'Min',
-                      value: data[Object.keys(data)[0]].temperature_2m_min.value,
-                      suffix: data[Object.keys(data)[0]].temperature_2m_min.unit,
-                      icon: <IconFont type='icon-Temperaturedown' style={{ fontSize: 60 }} />
-                    }}
-                  />
-                  <StatisticCard
-                    style={{ background: "transparent" }}
-                    statistic={{
-                      title: 'Max',
-                      value: data[Object.keys(data)[0]].temperature_2m_max.value,
-                      suffix: data[Object.keys(data)[0]].temperature_2m_max.unit,
-                      icon: <IconFont type='icon-Temperatureup' style={{ fontSize: 60 }} />
-                    }}
-                  />
-                </StatisticCard.Group>
-              </Flex>
-            </Flex>
-            <WeatherCard data={data} />
-          </>}
+              <WeatherCard data={data} />
+            </>
+          }
         </MainLayout>
       </ConfigProvider >
     </ProConfigProvider>
