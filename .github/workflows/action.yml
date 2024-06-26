@@ -2,9 +2,8 @@ name: Deploy content to Pages
 
 on:
   push:
-    branches: ['main']
-    pull_request:
-      types: [opened, synchronize, reopened]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -49,6 +48,6 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: googleapis/release-please-action@v4.1.3
+      - uses: googleapis/release-please-action@v4
         with:
           release-type: node
