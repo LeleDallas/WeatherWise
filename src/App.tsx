@@ -1,13 +1,14 @@
 import { ProConfigProvider, StatisticCard } from '@ant-design/pro-components';
-import { AutoComplete, ConfigProvider, Flex, Typography } from 'antd';
+import { ConfigProvider, Flex, Typography } from 'antd';
 import { useState } from 'react';
 import { City, ForecastingUnits } from './@types/api';
 import api from './api';
+import WeekWeatherCard from './components/Card/WeekWeatherCard';
 import WeatherCard from './components/Card/WheatherCard';
 import { IconFont } from './components/IconFont';
-import MainLayout from './layout/MainLayout';
 import './i18n/config';
-import WeekWeatherCard from './components/Card/WeekWeatherCard';
+import Header from './layout/Header';
+import MainLayout from './layout/MainLayout';
 
 const { Text } = Typography
 
@@ -21,6 +22,7 @@ type AutoCompleteProps = {
 function App() {
   const [value, setValue] = useState<AutoCompleteProps[]>([])
   const [data, setData] = useState<Record<string, ForecastingUnits>>()
+
   const handleChange = async (value: string) => {
     await api.cities.fetch(value).then((data) => {
       setValue(data?.results?.map((item: City) => {
@@ -54,24 +56,7 @@ function App() {
         }}
       >
         <MainLayout>
-          <Flex align='center' justify='center' gap={10}>
-            <AutoComplete
-              suffixIcon={<IconFont type='icon-shower-night' style={{ fontSize: 22 }} />}
-              allowClear
-              style={{ width: "90%" }}
-              options={value}
-              showSearch
-              onSelect={(_, data) => handleSelect(data.city)}
-              onChange={handleChange}
-              optionRender={({ data }) =>
-                <Flex align='center' gap={8}>
-                  <p>{data.label}</p>
-                  <img width="18" src={`${import.meta.env.VITE_GITHUB_FLAG_KEY}${data.city.country_code.toLowerCase()}.svg`}
-                    alt={data.city.country_code} />
-                </Flex>
-              }
-            />
-          </Flex>
+          <Header value={value} handleSelect={handleSelect} handleChange={handleChange} />
           {data &&
             <>
               <Flex wrap align='center' justify='space-between' style={{ paddingInline: 42 }}>
