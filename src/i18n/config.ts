@@ -8,7 +8,7 @@ i18next.use(initReactI18next).init({
     lng: 'it',
     defaultNS: 'italian',
     resources: {
-        en: {english},
-        it: {italian}
+        en: { english },
+        it: { italian },
     },
 });
