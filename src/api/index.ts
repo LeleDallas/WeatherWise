@@ -92,7 +92,7 @@ export default {
                         title: t("humidity"),
                         icon: "icon-Humidity"
                     },
-                    weather_code: WeatherCode[forecasting.daily.weather_code[index]],
+                    weather_code: t(WeatherCode[forecasting.daily.weather_code[index]]),
                     wind_gusts_10m_max: {
                         value: forecasting.daily.wind_gusts_10m_max[index],
                         unit: forecasting.daily_units.wind_gusts_10m_max,
