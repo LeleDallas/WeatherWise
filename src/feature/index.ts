@@ -1,3 +1,5 @@
+import { City } from '../@types/api';
+
 export const enumToIconName = (value: number) => {
     switch (value) {
         case 0:
@@ -9,7 +11,7 @@ export const enumToIconName = (value: number) => {
         case 3:
             return 'icon-a-Overcastsky';
         case 45:
-            return "icon-haze";
+            return 'icon-haze';
         case 48:
             return 'icon-a-Thefog';
         case 51:
@@ -50,11 +52,26 @@ export const enumToIconName = (value: number) => {
             return 'icon-SnowShowersSlight';
         case 86:
             return 'icon-SnowShowersHeavy';
-        case 95: return "icon-rainstorm"
+        case 95:
+            return 'icon-rainstorm';
         case 96:
         case 99:
             return 'icon-thundershower';
         default:
             return 'icon-ClearSky';
     }
-}
+};
+
+export const cityToName = (city: City) => {
+    let name = city.name;
+    if (city.admin1) {
+        name += `, ${city.admin1}`;
+    }
+    if (city.admin2) {
+        name += `, ${city.admin2}`;
+    }
+    if (city.country) {
+        name += `, ${city.country}`;
+    }
+    return name;
+};
