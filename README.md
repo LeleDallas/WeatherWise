@@ -10,6 +10,14 @@
   </a>
 </p>
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LeleDallas_WeatherWise&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=LeleDallas_WeatherWise)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=LeleDallas_WeatherWise&metric=bugs)](https://sonarcloud.io/summary/new_code?id=LeleDallas_WeatherWise)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=LeleDallas_WeatherWise&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=LeleDallas_WeatherWise)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=LeleDallas_WeatherWise&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=LeleDallas_WeatherWise)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=LeleDallas_WeatherWise&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=LeleDallas_WeatherWise)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=LeleDallas_WeatherWise&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=LeleDallas_WeatherWise)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=LeleDallas_WeatherWise&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=LeleDallas_WeatherWise)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=LeleDallas_WeatherWise&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=LeleDallas_WeatherWise)
 
 <!-- TABLE OF CONTENTS -->
 <h2 id="table-of-contents"> :book: Table of Contents</h2>
