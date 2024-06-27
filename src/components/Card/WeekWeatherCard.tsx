@@ -2,9 +2,10 @@ import { StatisticCard } from '@ant-design/pro-components';
 import { Flex } from 'antd';
 import { ForecastingUnits } from '../../@types/api';
 import { IconFont } from '../IconFont';
+import { t } from 'i18next';
 
 const WeekWeatherCard = ({ data }: { data: Record<string, ForecastingUnits> }) => (
-    <StatisticCard.Group wrap style={{ background: 'transparent' }} direction="row" gutter={[16, 16]}>
+    <StatisticCard.Group wrap style={{ background: 'transparent', marginTop: 22 }} direction="row" gutter={[16, 16]}>
         {Object.keys(data)
             .splice(1, 7)
             .map((key) => (
@@ -23,7 +24,7 @@ const WeekWeatherCard = ({ data }: { data: Record<string, ForecastingUnits> }) =
                                 <StatisticCard
                                     style={{ background: 'transparent' }}
                                     statistic={{
-                                        description: 'min',
+                                        description: t("apparent_temperature_min"),
                                         value: data[key].temperature_2m_min.value,
                                         suffix: data[key].temperature_2m_min.unit,
                                     }}
@@ -31,17 +32,16 @@ const WeekWeatherCard = ({ data }: { data: Record<string, ForecastingUnits> }) =
                                 <StatisticCard
                                     style={{ background: 'transparent' }}
                                     statistic={{
-                                        description: 'max',
+                                        description: t("apparent_temperature_max"),
                                         value: data[key].temperature_2m_max.value,
                                         suffix: data[key].temperature_2m_max.unit,
                                     }}
                                 />
                             </Flex>
                         ),
-                        // valueRender: () => <></>
                     }}
                 />
             ))}
     </StatisticCard.Group>
-);
-export default WeekWeatherCard;
+)
+export default WeekWeatherCard

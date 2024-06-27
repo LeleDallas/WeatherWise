@@ -1,6 +1,7 @@
 import { StatisticCard } from '@ant-design/pro-components';
 import { ForecastingUnits } from '../../@types/api';
 import { IconFont } from '../IconFont';
+import { t } from 'i18next';
 
 type Props = {
     data: Record<string, ForecastingUnits>;
@@ -9,9 +10,9 @@ type Props = {
 const excludeKeys = ['apparent_temperature_max', 'apparent_temperature_min', 'temperature_2m_max', 'temperature_2m_min'];
 
 const WeatherCard = ({ data }: Props) => (
-    <StatisticCard.Group wrap style={{ background: 'transparent' }}>
+    <StatisticCard.Group wrap style={{ background: 'transparent', marginTop: 22 }}>
         {Object.entries(data[Object.keys(data)[0]]).map(([key, value]) => {
-            if (typeof value === 'object' && value.value != 0 && !excludeKeys.includes(key)) {
+            if (typeof value === 'object' && !excludeKeys.includes(key)) {
                 return (
                     <StatisticCard
                         key={key}
@@ -25,7 +26,7 @@ const WeatherCard = ({ data }: Props) => (
                             xxl: 6,
                         }}
                         statistic={{
-                            title: value.title,
+                            title: t(value.title),
                             value: value.value,
                             suffix: value.unit,
                             icon: (

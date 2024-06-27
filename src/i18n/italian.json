@@ -1,7 +1,7 @@
 {
     "apparent_temperature": "Temperatura percepita",
-    "apparent_temperature_max": "Temperatura massima percepita",
-    "apparent_temperature_min": "Temperatura minima percepita",
+    "apparent_temperature_max": "Temperatura massima",
+    "apparent_temperature_min": "Temperatura minima",
     "Clear Sky": "Cielo sereno",
     "Drizzle Dense": "Pioggerella intensa",
     "Drizzle Light": "Pioggerella leggera",
@@ -26,6 +26,7 @@
     "Rain Showers Violent": "Pioggia intensa",
     "Rain Slight": "Pioggia leggera",
     "Rime Fog": "Nebbia ghiacciata",
+    "search_placeholder": "Cerca una località",
     "Snow Fall Heavy": "Neve intensa",
     "Snow Fall Moderate": "Neve moderata",
     "Snow Fall Slight": "Neve leggera",
