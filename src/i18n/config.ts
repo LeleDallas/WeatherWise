@@ -4,11 +4,11 @@ import english from './english.json';
 import italian from './italian.json';
 
 i18next.use(initReactI18next).init({
-    debug: true,
+    debug: import.meta.env.MODE === 'development',
     lng: 'it',
-    defaultNS: 'italian',
+    defaultNS: 'translation',
     resources: {
-        en: { english },
-        it: { italian },
+        en: { translation: english },
+        it: { translation: italian },
     },
 });

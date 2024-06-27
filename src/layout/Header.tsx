@@ -1,6 +1,7 @@
-import { AutoComplete, Flex } from 'antd';
-import { IconFont } from '../components/IconFont';
+import { AutoComplete, Dropdown, Flex } from 'antd';
+import i18next, { t } from 'i18next';
 import { City } from '../@types/api';
+import { IconFont } from '../components/IconFont';
 
 type AutoCompleteProps = {
     value: string;
@@ -13,16 +14,39 @@ type Props = {
     value: AutoCompleteProps[];
     handleChange: (value: string) => Promise<void>;
     handleSelect: (value: City) => void;
+    setLanguage: (value: string) => void;
 };
 
 const Header = (props: Props) => {
-    const { value, handleChange, handleSelect } = props;
+    const { value, handleChange, handleSelect, setLanguage } = props;
+    const items = [
+        {
+            label: 'IT',
+            key: 2,
+            icon: <img width="18" src={`${import.meta.env.VITE_GITHUB_FLAG_KEY}it.svg`} alt="it" />,
+            onClick: () => {
+                i18next.changeLanguage('it');
+                setLanguage('it')
+            },
+        },
+        {
+            label: 'EN',
+            key: 1,
+            icon: <img width="18" src={`${import.meta.env.VITE_GITHUB_FLAG_KEY}gb.svg`} alt="gb" />,
+            onClick: () => {
+                i18next.changeLanguage('en');
+                setLanguage('en')
+            },
+        }
+    ]
+
     return (
         <Flex align="center" justify="center" gap={10}>
             <AutoComplete
-                suffixIcon={<IconFont type="icon-shower-night" style={{ fontSize: 22 }} />}
+                suffixIcon={<IconFont type="icon-nearbydestinations" style={{ fontSize: 22 }} />}
                 allowClear
-                style={{ width: '90%' }}
+                placeholder={t("search_placeholder")}
+                style={{ width: '90%', textAlign: 'center' }}
                 options={value}
                 showSearch
                 onSelect={(_, data) => handleSelect(data.city)}
@@ -38,6 +62,9 @@ const Header = (props: Props) => {
                     </Flex>
                 )}
             />
+            <Dropdown menu={{ items }}>
+                <IconFont type="icon-world" style={{ fontSize: 22 }} />
+            </Dropdown>
         </Flex>
     );
 };

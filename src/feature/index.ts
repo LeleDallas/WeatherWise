@@ -75,3 +75,7 @@ export const cityToName = (city: City) => {
     }
     return name;
 };
+
+
+export const dateToDay = (date: string, language: string) =>
+    new Date(date).toLocaleDateString(language, { weekday: 'short', month: 'short', day: 'numeric' });

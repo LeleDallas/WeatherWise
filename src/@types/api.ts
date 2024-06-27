@@ -59,6 +59,7 @@ export type Forecasting = {
         weather_code: string;
         wind_gusts_10m_max: string;
         wind_speed_10m_max: string;
+
     };
     elevation: number;
     generationtime_ms: number;
@@ -94,8 +95,6 @@ export type ForecastingUnits = {
     pressure: UnitsData;
     humidity: UnitsData;
 };
-
-export type ForecastingResponse = Record<string, ForecastingUnits>;
 
 export enum WeatherCode {
     'Clear Sky' = 0,
