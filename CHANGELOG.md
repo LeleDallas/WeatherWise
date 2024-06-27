@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/LeleDallas/WeatherWise/compare/v1.0.0...v1.1.0) (2024-06-27)
+
+
+### Features
+
+* **App:** language mode ([3055cbc](https://github.com/LeleDallas/WeatherWise/commit/3055cbc94c274313a9afe7067b2afbc4fed4ac5c))
+* card responsiveness ([e387318](https://github.com/LeleDallas/WeatherWise/commit/e387318ac8d212cf663e66956fe04d9dfa08c4b4))
+
 ## 1.0.0 (2024-06-27)
 
 
