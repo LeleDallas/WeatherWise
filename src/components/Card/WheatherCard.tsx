@@ -10,12 +10,13 @@ type Props = {
 const excludeKeys = ['apparent_temperature_max', 'apparent_temperature_min', 'temperature_2m_max', 'temperature_2m_min'];
 
 const WeatherCard = ({ data }: Props) => (
-    <StatisticCard.Group wrap style={{ background: 'transparent', marginTop: 22 }}>
+    <StatisticCard.Group wrap style={{ background: 'transparent', marginTop: 22 }} >
         {Object.entries(data[Object.keys(data)[0]]).map(([key, value]) => {
             if (typeof value === 'object' && !excludeKeys.includes(key)) {
                 return (
                     <StatisticCard
                         key={key}
+                        bodyStyle={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}
                         style={{ background: 'transparent', maxWidth: 300 }}
                         colSpan={{
                             xs: 24,

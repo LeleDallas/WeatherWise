@@ -14,11 +14,10 @@ const { Text } = Typography
 const Content = ({ data }: Props) => {
 
     const commonStyle = { background: 'transparent', filter: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))' }
-    const isMobile = window.innerWidth < 768;
 
     return (
         data && <>
-            <Flex wrap align="center" justify="space-evenly" style={{ paddingInline: 42 }}>
+            <Flex wrap align="center" justify="space-evenly" >
                 <Flex wrap align="center" justify="center">
                     <IconFont
                         type={data[Object.keys(data)[0]].icon}
@@ -32,7 +31,7 @@ const Content = ({ data }: Props) => {
                                 valueStyle: { fontSize: 70 },
                                 description: t(data[Object.keys(data)[0]].weather_code),
                                 suffix: data[Object.keys(data)[0]].temperature_2m_max.unit,
-                                valueRender: () => <Text style={{ fontSize: isMobile ? 20 : 100 }}>{data[Object.keys(data)[0]].current}</Text>
+                                valueRender: () => <Text style={{ fontSize: 80 }}>{data[Object.keys(data)[0]].current}</Text>
                             }}
                         />
                     </Flex>
@@ -73,7 +72,7 @@ const Content = ({ data }: Props) => {
                 </Flex>
             </Flex >
             <WeatherCard data={data} />
-            {/* <WeekWeatherCard data={data} /> */}
+            <WeekWeatherCard data={data} />
         </>
     )
 }

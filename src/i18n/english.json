@@ -1,7 +1,7 @@
 {
   "apparent_temperature": "Temperature",
-  "apparent_temperature_max": "Maximum Temperature",
-  "apparent_temperature_min": "Minimum Temperature",
+  "apparent_temperature_max": "Max Temperature",
+  "apparent_temperature_min": "Min Temperature",
   "Clear Sky": "Clear Sky",
   "Drizzle Dense": "Drizzle Dense",
   "Drizzle Light": "Drizzle Light",
@@ -36,10 +36,10 @@
   "sunrise": "Sunrise",
   "sunset": "Sunset",
   "temperature": "Temperature",
-  "temperature_2m_max": "Maximum Temperature",
-  "temperature_2m_min": "Minimum Temperature",
-  "temperature_max": "Maximum Temperature",
-  "temperature_min": "Minimum Temperature",
+  "temperature_2m_max": "Max Temperature",
+  "temperature_2m_min": "Min Temperature",
+  "temperature_max": "Max Temperature",
+  "temperature_min": "Min Temperature",
   "Thunderstorm": "Thunderstorm",
   "Thunderstorm Heavy": "Thunderstorm Heavy",
   "Thunderstorm Slight": "Thunderstorm Slight",
@@ -50,6 +50,6 @@
   "wind_direction": "Wind Direction",
   "wind_gusts_10m_max": "Wind Gusts",
   "wind_speed": "Wind Speed",
-  "wind_speed_10m_max": "Maximum Wind Speed",
-  "wind_speed_max": "Maximum Wind Speed"
+  "wind_speed_10m_max": "Max Wind Speed",
+  "wind_speed_max": "Max Wind Speed"
 }
