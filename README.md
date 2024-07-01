@@ -48,7 +48,7 @@ Check the app [here](https://leledallas.github.io/WeatherWise/)!
 <!-- GETTING STARTED -->
 <h2 id="getting-started"> :book: Getting Started</h2>
 
-Via GitHub Desktop clone this repository then to run the server and client, you need to have Node.js `v20.12.2` or higher installed on your system.
+Via GitHub Desktop clone this repository then to run the client, you need to have Node.js `v20.12.2` or higher installed on your system.
 
 > [!WARNING]  
 > To run this project locally you need to create an `.env` file in the root of the project directory with following variables:
