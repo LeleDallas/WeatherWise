@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.1](https://github.com/LeleDallas/WeatherWise/compare/v1.1.0...v1.1.1) (2024-07-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @ant-design/pro-components to v2.7.14 ([230fb54](https://github.com/LeleDallas/WeatherWise/commit/230fb540b216c79d9ba9684bb41390f4e9b19f65))
+* **deps:** update dependency antd to v5.19.1 ([6c98b61](https://github.com/LeleDallas/WeatherWise/commit/6c98b61973b7e4581ad420a48cee436457046251))
+* **deps:** update dependency antd to v5.19.3 ([c03ccdc](https://github.com/LeleDallas/WeatherWise/commit/c03ccdca2e1916d77a3eca228bcd888fdebe7a47))
+* **deps:** update dependency eslint-plugin-react to v7.34.4 ([9e5479f](https://github.com/LeleDallas/WeatherWise/commit/9e5479f7c46b7420c142139735230f3c6344d701))
+* **deps:** update dependency i18next to v23.12.1 ([02d4ce5](https://github.com/LeleDallas/WeatherWise/commit/02d4ce5b7343afb8214d71cf9eac140a95a9798a))
+* **deps:** update dependency i18next to v23.12.2 ([5a3c4eb](https://github.com/LeleDallas/WeatherWise/commit/5a3c4eb584c914fe0337109e7e2c115cf10d50ac))
+
 ## [1.1.0](https://github.com/LeleDallas/WeatherWise/compare/v1.0.0...v1.1.0) (2024-06-27)
 
 
