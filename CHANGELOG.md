@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.2](https://github.com/LeleDallas/WeatherWise/compare/v1.1.1...v1.1.2) (2024-07-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @ant-design/icons to v5.4.0 ([8dfc1b1](https://github.com/LeleDallas/WeatherWise/commit/8dfc1b1142a757cd183e8e8509ff26935b4f8b8b))
+* **deps:** update dependency eslint-plugin-react to v7.35.0 ([43dcd9c](https://github.com/LeleDallas/WeatherWise/commit/43dcd9c4e987fa67ac1ad5c452b978e9126766d9))
+
 ## [1.1.1](https://github.com/LeleDallas/WeatherWise/compare/v1.1.0...v1.1.1) (2024-07-19)
 
 
