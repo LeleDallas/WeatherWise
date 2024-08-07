@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.3](https://github.com/LeleDallas/WeatherWise/compare/v1.1.2...v1.1.3) (2024-08-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @ant-design/pro-components to v2.7.15 ([d7b05be](https://github.com/LeleDallas/WeatherWise/commit/d7b05beb9ec836c9788b3c5819dd72f4960ce7f6))
+* **deps:** update dependency antd to v5.19.4 ([42e1178](https://github.com/LeleDallas/WeatherWise/commit/42e1178601d7bd86433fa3c895ce84cd6cedb25a))
+* **deps:** update dependency antd to v5.20.0 ([d371470](https://github.com/LeleDallas/WeatherWise/commit/d371470139b40c7344ebcfbb6afc2b5d8d62815f))
+* **deps:** update dependency axios to v1.7.3 ([07685c9](https://github.com/LeleDallas/WeatherWise/commit/07685c930f35e31064ca15267053f1aa9ea31d2f))
+
 ## [1.1.2](https://github.com/LeleDallas/WeatherWise/compare/v1.1.1...v1.1.2) (2024-07-23)
 
 
