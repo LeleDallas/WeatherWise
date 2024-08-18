@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.4](https://github.com/LeleDallas/WeatherWise/compare/v1.1.3...v1.1.4) (2024-08-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency antd to v5.20.1 ([2e6873f](https://github.com/LeleDallas/WeatherWise/commit/2e6873fb407d4f2b6f47fb72bfc58eb266ad1c08))
+* **deps:** update dependency axios to v1.7.4 ([0348495](https://github.com/LeleDallas/WeatherWise/commit/03484956e44220fdb2338e0677d4cc451e7196ce))
+* **deps:** update dependency i18next to v23.12.3 ([3bf055d](https://github.com/LeleDallas/WeatherWise/commit/3bf055d845f310412da59a508f0a0633f0803d80))
+* **deps:** update dependency i18next to v23.13.0 ([a520ffa](https://github.com/LeleDallas/WeatherWise/commit/a520ffa9c263e0f82c30bff609e38aefdd0ed1bc))
+
 ## [1.1.3](https://github.com/LeleDallas/WeatherWise/compare/v1.1.2...v1.1.3) (2024-08-07)
 
 
