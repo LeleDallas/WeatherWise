@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.5](https://github.com/LeleDallas/WeatherWise/compare/v1.1.4...v1.1.5) (2024-08-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency antd to v5.20.2 ([4ca6a72](https://github.com/LeleDallas/WeatherWise/commit/4ca6a723a3614d70773d5056dd0e40784ea85ad9))
+
 ## [1.1.4](https://github.com/LeleDallas/WeatherWise/compare/v1.1.3...v1.1.4) (2024-08-17)
 
 
