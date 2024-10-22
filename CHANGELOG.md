@@ -1,5 +1,34 @@
 # Changelog
 
+## [1.1.6](https://github.com/LeleDallas/WeatherWise/compare/v1.1.5...v1.1.6) (2024-10-22)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([4be3b15](https://github.com/LeleDallas/WeatherWise/commit/4be3b156c3f660ab72ec0ee57aa9915853958cc4))
+* **deps:** update all non-major dependencies ([3512e7f](https://github.com/LeleDallas/WeatherWise/commit/3512e7fdbfd2c095c5a2416072d777fd1072b56a))
+* **deps:** update all non-major dependencies ([09af622](https://github.com/LeleDallas/WeatherWise/commit/09af622893065e9ac85bf6d65c109b02127fb567))
+* **deps:** update all non-major dependencies ([074f7a3](https://github.com/LeleDallas/WeatherWise/commit/074f7a3073f9d37a09a5aa851a055a5db5a54970))
+* **deps:** update all non-major dependencies ([63eb9d9](https://github.com/LeleDallas/WeatherWise/commit/63eb9d9bfe9dc1ceb8c74abc7c439869d3f9dfb5))
+* **deps:** update dependency @ant-design/icons to v5.5.1 ([7901854](https://github.com/LeleDallas/WeatherWise/commit/79018547c0f7db516db499627e29add8e0f365d5))
+* **deps:** update dependency @ant-design/pro-components to v2.7.19 ([36f74bf](https://github.com/LeleDallas/WeatherWise/commit/36f74bf622a42758f8a1ee8854e8d418120332c5))
+* **deps:** update dependency antd to v5.20.3 ([47deb11](https://github.com/LeleDallas/WeatherWise/commit/47deb11418005b2a4780ef44a8e9c1948ca85f51))
+* **deps:** update dependency antd to v5.20.4 ([777c32d](https://github.com/LeleDallas/WeatherWise/commit/777c32d57c8189667c65a59cc22251b2ed5581b6))
+* **deps:** update dependency antd to v5.20.5 ([62e0a62](https://github.com/LeleDallas/WeatherWise/commit/62e0a62ae0514128f90b7b5b8527a5e7104c0e7f))
+* **deps:** update dependency antd to v5.21.0 ([ae36120](https://github.com/LeleDallas/WeatherWise/commit/ae36120c3840bf5d2bdf54e5c5557b61f7a9b3dc))
+* **deps:** update dependency axios to v1.7.5 ([aabbd8b](https://github.com/LeleDallas/WeatherWise/commit/aabbd8b9e4927fffcac5d098afee745098c99895))
+* **deps:** update dependency axios to v1.7.6 ([59b10af](https://github.com/LeleDallas/WeatherWise/commit/59b10afb8638bff234ee24f5fad18be27044b593))
+* **deps:** update dependency axios to v1.7.7 ([baeeae8](https://github.com/LeleDallas/WeatherWise/commit/baeeae879188039e352f95a95d6cf4b77d99bc8f))
+* **deps:** update dependency eslint-plugin-react to v7.35.2 ([e2a656f](https://github.com/LeleDallas/WeatherWise/commit/e2a656f90ae3619b141c72f3c2bbccaa5a614046))
+* **deps:** update dependency eslint-plugin-react to v7.36.0 ([e72d90d](https://github.com/LeleDallas/WeatherWise/commit/e72d90d208dab65ad2c7d235f82e4c5ed173afa1))
+* **deps:** update dependency eslint-plugin-react to v7.36.1 ([438ffab](https://github.com/LeleDallas/WeatherWise/commit/438ffab71633d7ff35d6aed6d2eddbc5cea1b6d7))
+* **deps:** update dependency eslint-plugin-react to v7.37.0 ([cb315bd](https://github.com/LeleDallas/WeatherWise/commit/cb315bd1ea9d36f354799210ae8833ca57f88404))
+* **deps:** update dependency eslint-plugin-react to v7.37.1 ([a79ce0f](https://github.com/LeleDallas/WeatherWise/commit/a79ce0ff68e0efe1b61ea77dd175b0cbc3b8b3db))
+* **deps:** update dependency i18next to v23.15.2 ([b4c7387](https://github.com/LeleDallas/WeatherWise/commit/b4c7387c685069f8aa1a9f098010bf9ec6ee2f7b))
+* **deps:** update dependency i18next to v23.16.0 ([5162f4b](https://github.com/LeleDallas/WeatherWise/commit/5162f4bf2021dd6be37b8821a9892c4ad7f39a8d))
+* **deps:** update dependency react-i18next to v15.0.1 ([f30ddd4](https://github.com/LeleDallas/WeatherWise/commit/f30ddd451f0172f58a7c2969d61264646d9e6e1c))
+* **deps:** update dependency react-i18next to v15.0.2 ([7a9cfc9](https://github.com/LeleDallas/WeatherWise/commit/7a9cfc9f77bbaa118632f9445ac7e1c550df4f30))
+
 ## [1.1.5](https://github.com/LeleDallas/WeatherWise/compare/v1.1.4...v1.1.5) (2024-08-21)
 
 
